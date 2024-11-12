@@ -28,8 +28,8 @@ body{
 
 }
 .container:hover{
-    transition:0.3s ease;
-    transform:translateY(-10px);
+    transition:0.7s ease-in-out;
+    transform: translateY(-10px) scale3d(1.1, 1.1, 4.1);
     box-shadow: 5px 50px 30px 10px;
 }
 header,.logo{
