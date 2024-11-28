@@ -56,7 +56,7 @@
 .side .menu li{
     margin-top: 6px;
     padding: 15px 20px;
-    /
+    
 }
 
 .side .menu i{
@@ -73,6 +73,6 @@ padding-right: 8px;
 
 }
 .side .menu li:hover{
-    border-left: 2px solid white;
+    border-left: 2px solid rgb(247, 11, 11);
 }
 
