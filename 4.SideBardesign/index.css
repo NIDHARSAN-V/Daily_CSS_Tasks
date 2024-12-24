@@ -20,8 +20,8 @@
     width: 300px;
     background: rgba(255, 255, 255, 0.1);
     /* backdrop-filter: blur(1px);  */
-    box-shadow: 0 0 6px rgba(255,255,255,0.6)
-    
+    box-shadow: 0 0 6px rgba(255,255,255,0.6);
+    transition: left 0.5s ease, opacity 0.5s ease;
 }
 
 .sidebar .logo{
@@ -134,10 +134,14 @@ box-shadow: 0 0 6px rgba(255,255,255,0.6);
 #check:checked ~ .sidebar {
     left: 0;
 }
+#check:checked ~ .btn_one i {
+    opacity: 0;
+    transition:opacity 0.5s ease;
+}
 #check:checked ~ .sidebar .btn_two i {
     opacity: 1;
+    color: antiquewhite;
+    font-weight: 600;
+    transition:opacity 0.5s ease;
 }
 
-#check:checked ~ .sidebar .btn_one i {
-    opacity: 0;
-}
