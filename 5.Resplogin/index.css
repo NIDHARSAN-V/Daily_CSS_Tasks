@@ -7,7 +7,7 @@
 
 body{
    
-    background-color: rgb(66, 187, 159);
+    background-color: rgb(200, 219, 214);
     overflow: hidden;
 }
 
@@ -15,7 +15,7 @@ body{
     max-width: 450px;
     padding: 0 20px;
     margin:180px auto;
-    /* display: flex; */
+
   
 
 
