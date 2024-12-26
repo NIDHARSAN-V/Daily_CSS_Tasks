@@ -5,17 +5,25 @@
     font-family: "Popppins", sans-serif;
 }
 
-html,body{
-    display: grid;
-    place-content: center;
-    height: 100%;
+body{
+   
     background-color: rgb(66, 187, 159);
+    overflow: hidden;
 }
 
+.container{
+    max-width: 450px;
+    padding: 0 20px;
+    margin:180px auto;
+    /* display: flex; */
+  
+
+
+}
 
 .wrapper{
     background-color: white;
-    width:380px;
+    width:100%;
     border-radius: 10px;
 }
 
@@ -55,6 +63,11 @@ html,body{
     background-color: aliceblue;
 }
 
+.wrapper form .row input:hover{
+    box-shadow: inset 5px 5px 5px rgb(5, 138, 136);
+    transition: box-shadow 0.5s ease;
+}
+
 .wrapper form .row i{
     background-color: red;
     position: absolute;
@@ -77,6 +90,31 @@ html,body{
     background-color: rgb(7, 155, 150);
     border-radius: 3px;
     color: white;
-    
 
+
+}
+
+.wrapper form .pass{
+    margin: -10px 0  15px 0 ;
+}
+
+.wrapper form .pass a{
+    color:rgb(7, 155, 150); 
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.wrapper form .pass a:hover{
+    text-decoration: underline;
+}
+
+.wrapper form .signup-link{
+    text-align: center;
+}
+
+.wrapper form .signup-link a{
+    color:rgb(7, 155, 150); 
+    text-decoration: none;
+    font-size: 17px;
 }
