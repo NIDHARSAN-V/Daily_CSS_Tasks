@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Popppins", sans-serif;
+}
+
+html,body{
+    display: grid;
+    place-content: center;
+    height: 100%;
+    background-color: rgb(66, 187, 159);
+}
+
+
+.wrapper{
+    background-color: white;
+    width:380px;
+    border-radius: 10px;
+}
+
+.wrapper .title{
+    width: 100%;
+    padding-left: 20px;
+    line-height: 80px;
+    background-color: rgb(7, 155, 150);
+    border-radius: 10px 10px 0px 0px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px 2px  black;
+}
+
+
+.wrapper form{
+    /* position: relative; */
+    padding: 25px 20px 20px 20px;
+}
+
+.wrapper form .row{
+    position: relative;
+    height: 40px;
+    margin-bottom: 20px;
+    /* background-color: red; */
+}
+
+.wrapper form .row input {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px 0 0 0;
+    padding-left: 60px;
+    border: none; 
+    outline: none !important; 
+    box-shadow: none;
+    background-color: aliceblue;
+}
+
+.wrapper form .row i{
+    background-color: red;
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: rgb(7, 155, 150);
+    color: aliceblue;
+    border-radius: 30px 0px 0px ;
+}
+
+
+.wrapper form .button input{
+    padding-left: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    background-color: rgb(7, 155, 150);
+    border-radius: 3px;
+    color: white;
+    
+
+}
