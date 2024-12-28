@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    height: 100px;
+    background-color: rgb(28, 28, 28);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 20px;
+    transition: background-color 0.3s ease; /* Smooth transition for navbar color */
+}
+
+.navbar .menus {
+    height: 100%;
+    align-items: center;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.navbar .logo .lotext {
+    color: white;
+}
+
+.navbar .menus .element {
+    list-style: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer; /* Pointer for interactivity */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar .menus .element:hover {
+    color: rgb(255, 85, 85); /* Change text color on hover */
+}
+
+.main {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    background: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the background image covers the entire section */
+}
+
+.main .container {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    justify-content: center;
+    gap: 40px;
+    border-radius: 10px;
+    background-color: rgba(107, 107, 107, 0.2);
+    backdrop-filter: blur(2px); /* Fixed typo for backdrop filter */
+    transition: transform 0.3s ease; /* Add a hover transition effect */
+}
+
+.main .container:hover {
+    transform: scale(1.05); /* Slightly enlarge the container on hover */
+}
+
+.content {
+    color: rgb(65, 65, 65);
+    font-weight: 600;
+    font-size: 30px;
+    text-shadow: 2px 1px 4px rgb(255, 255, 255);
+    transition: text-shadow 0.3s ease; /* Smooth text-shadow transition */
+}
+
+.content:hover {
+    text-shadow: 4px 2px 8px rgb(255, 255, 255); /* Increase shadow on hover */
+}
+
+.butt {
+    display: flex;
+    gap: 60px;
+}
+
+.butt .b1, .butt .b2 {
+    width: 120px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Smooth transition for button effects */
+    cursor: pointer; /* Pointer for interactivity */
+}
+
+.butt .b1 {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+.butt .b1:hover {
+    background-color: rgb(255, 255, 255); /* Invert background color on hover */
+    color: black;
+    border-color: black;
+}
+
+.butt .b2 {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+}
+
+.butt .b2:hover {
+    background-color: black; /* Invert background color on hover */
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
